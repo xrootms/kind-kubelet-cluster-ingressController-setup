@@ -1,6 +1,6 @@
 # k8s-kind
 
-## Setup kubectl and kind
+## 1. Setup kubectl and kind
 
 ```xml
 git clone https://github.com/xrootms/kind-kubelet-cluster-ingressController-setup.git
@@ -16,7 +16,7 @@ kubectl version --client
 ```
 
 
-## Setup Cluster with one master and two worker Node
+## 2. Setup Cluster with one master and two worker Node
 
 ```xml
 kind create cluster --name mycluster --config cluster-master-config.yml --image kindest/node:v1.33.1
@@ -34,10 +34,11 @@ kubectl get pods -n kube-system
 kubectl get nodes
 kubectl get nodes -o wide
 kubectl get ns
+```
 
 ---
 
-## Setup Nginx Ingress Controller
+## 3. Install Nginx Ingress Controller
 
 ```xml
 kubectl apply -f ingress-controller-for-kind.yaml
@@ -52,6 +53,7 @@ kubectl get deploy -n ingress-nginx
 kubectl describe pod <pod-name> -n ingress-nginx
 ```
 
+## ingress resources
 
 ```xml
 kubectl get ingressclass         ## SWhen you installer nginx ingress controller
