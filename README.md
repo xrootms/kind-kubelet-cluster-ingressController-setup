@@ -53,7 +53,7 @@ kubectl describe pod <pod-name> -n ingress-nginx
 ```
 
 #### -----------------------------------------
-### Install HELM 
+### 3. Install HELM 
 
 
 ```xml
