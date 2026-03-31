@@ -1,17 +1,27 @@
 # k8s-kind
 
-
-
-
+## setup kubectl and kind
 
 ```xml
-kind create cluster --name mycluster --config kind-mconfig.yaml --image kindest/node:v1.33.1
+git clone 
+cd kind-kubelet-cluster-ingressController-setup
+chmod +X kind-kubectl.sh
+./kind-kubectl.sh
 ```
+### Verify
 
 ```xml
 kind version
 kubectl version --client
 ```
+
+
+## setup Cluster with one master and two worker Node
+```xml
+kind create cluster --name mycluster --config kind-mconfig.yaml --image kindest/node:v1.33.1
+```
+
+### Verify
 
 ```groovy
 kind get clusters
