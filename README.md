@@ -53,9 +53,9 @@ kubectl get deploy -n ingress-nginx
 kubectl describe pod <pod-name> -n ingress-nginx
 ```
 
-# -----------------------------------------
-# Install HELM 
-# -----------------------------------------
+### -----------------------------------------
+## Install HELM 
+### -----------------------------------------
 
 ```xml
 curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
